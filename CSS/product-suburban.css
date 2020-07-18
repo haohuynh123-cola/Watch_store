@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 16px !important;
+    color: #111 !important;
+}
+
+
+/* sub menu */
+
+.navbar a {
+    color: #fff !important;
+    font-size: 20px !important;
+}
+
+.nav-item:hover {
+    border-bottom: 1px solid red;
+    transition: .5s;
+}
+
+.nav-link:hover a {
+    border-bottom: solid 1px red;
+}

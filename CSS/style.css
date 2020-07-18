@@ -1,0 +1,455 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 16px !important;
+    color: #111 !important;
+}
+
+
+/* sub menu */
+
+.navbar a {
+    color: #fff !important;
+    font-size: 20px !important;
+}
+
+.nav-item:hover {
+    border-bottom: 1px solid red;
+    transition: .5s;
+}
+
+.nav-link:hover a {
+    border-bottom: solid 1px red;
+}
+
+.nav-item-sale-off a {
+    color: red !important;
+}
+
+.navbar {
+    background: #111 !important;
+}
+
+
+/* cart */
+
+.giohang {
+    max-width: 100%;
+    padding: 5px;
+    background-color: rgb(105, 105, 105);
+    color: #fff;
+    transform: translateY(100px);
+    transition: .7s;
+}
+
+.card:hover .giohang {
+    transform: translateY(0);
+}
+
+.fa-cart-plus {
+    font-size: 24px;
+}
+
+.fa-heart {
+    width: 30px;
+    height: 30px;
+    border: 1px solid grey;
+    border-radius: 50%;
+    padding-top: 3px;
+    box-shadow: 0 0 5px gray;
+    position: absolute;
+    right: 5%;
+    transform: translateX(60px);
+    font-size: 24px;
+    transition: .7s;
+    top: 50%;
+}
+
+.fa-eye {
+    width: 30px;
+    height: 30px;
+    border: 1px solid grey;
+    border-radius: 50%;
+    padding-top: 3px;
+    box-shadow: 0 0 5px gray;
+    position: absolute;
+    right: 5%;
+    transform: translateX(60px);
+    font-size: 24px;
+    transition: .7s;
+    top: 60%;
+}
+
+.card:hover .fa-eye {
+    transform: translateX(-10px);
+}
+
+.card:hover .fa-heart {
+    transform: translateX(-10px);
+}
+
+
+/* .card:hover .hinh1 {
+    display: none;
+} */
+
+
+/* cart */
+
+
+/* slideshow */
+
+.carousel-indicators li {
+    width: 16px !important;
+    height: 16px !important;
+    border-radius: 50%;
+}
+
+
+/* service */
+
+.service {
+    display: flex;
+    justify-content: center;
+}
+
+.image-service {
+    width: 70px !important;
+    height: 73.19px !important;
+}
+
+.service p {
+    font-size: 24px !important;
+    font-weight: 600;
+    padding: 0 0 0 16px !important;
+}
+
+
+/* service */
+
+
+/* Sale */
+
+.sale-title,
+.hot-product-title,
+.new-even-title,
+.feedback-title {
+    position: relative;
+    opacity: 0;
+}
+
+.sale-title h3,
+.hot-product-title h3,
+.new-even-title h3,
+.feedback-title h3 {
+    font-size: 2em;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    line-height: 1.3em;
+    position: relative;
+    margin: 0;
+    margin-bottom: 0.8em;
+    padding-bottom: 1.3em;
+    font-weight: 700;
+}
+
+.sale-title h3:before,
+.hot-product-title h3:before,
+.new-even-title h3:before,
+.feedback-title h3:before {
+    position: absolute;
+    bottom: 0.60rem;
+    content: '';
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 5px;
+    background: linear-gradient(to right, #2d3855 0%, #2d3855 30%, rgba(255, 255, 255, 0) 30%, rgba(255, 255, 255, 0) 67%, #2d3855 67%, #2d3855 100%);
+}
+
+.fa-clock {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 24px;
+    line-height: 1;
+    color: #c82a36;
+}
+
+.card-product,
+.card-feedback {
+    background: no-repeat !important;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    transition: 1s;
+}
+
+.card-product img {
+    transition: 1s;
+}
+
+.price-sale {
+    text-decoration: line-through;
+    font-size: 18px;
+}
+
+.price {
+    color: rgb(252, 50, 50);
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.sale {
+    background-color: rgb(252, 50, 50);
+    width: 58px;
+    height: 60px;
+    font-size: 20px;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 5px;
+    border-radius: 999px !important;
+    font-weight: 500;
+    transition: 1s;
+    line-height: 45px;
+    color: #fff;
+    z-index: 999;
+}
+
+.card-product:hover img {
+    transform: translateY(-10px);
+}
+
+.card-product:hover {
+    box-shadow: 0 0 10px rgb(253, 253, 253);
+}
+
+
+/* Sale */
+
+
+/* new , even */
+
+.card-new-even {
+    background-color: rgb(66, 66, 66) !important;
+    opacity: 0;
+}
+
+.fa-caret-right {
+    color: rgb(252, 50, 50);
+}
+
+
+/* new , even */
+
+
+/* Feedback */
+
+.card-feedback img {
+    margin: 0 0 0 80px;
+}
+
+.fa-star {
+    color: rgb(252, 50, 50);
+}
+
+.card-feedback {
+    opacity: 0;
+    border: none !important;
+}
+
+
+/* Feedback */
+
+
+/* footer */
+
+footer {
+    background: url(../Imgs/background_footer.jpg);
+    color: #fff !important;
+}
+
+footer .container-fluid {
+    background-color: rgba(10, 10, 10, 0.8);
+    background-repeat: no-repeat;
+}
+
+.logo-footer {
+    border: dashed 2px red;
+    transform: rotate(10deg);
+}
+
+.fa-map-marker-alt,
+.fa-phone-volume,
+.fa-envelope,
+.fa-skype {
+    padding: 0 10px 0 0;
+    font-size: 18px;
+}
+
+footer p:hover {
+    color: rgb(252, 50, 50);
+    cursor: pointer;
+}
+
+.menu-footer li {
+    list-style: none;
+}
+
+.menu-footer li a {
+    padding: 0 10px 0 0;
+    font-size: 16px !important;
+    color: #fff !important;
+    transition: 1s;
+}
+
+.menu-footer li a:hover {
+    text-decoration: none;
+    color: rgb(252, 50, 50) !important;
+    border-left: 1px solid rgb(252, 50, 50);
+    transform: translateY(-20px);
+}
+
+.menu-footer .fa-caret-right {
+    padding: 10px;
+}
+
+.title-menu,
+.menu-product,
+.dangky,
+.connect {
+    text-transform: uppercase;
+}
+
+.connect {
+    font-weight: 600;
+}
+
+footer .fa-caret-right {
+    color: #fff !important;
+}
+
+.fa-facebook-f,
+.fa-instagram,
+.fa-twitter {
+    font-size: 30px;
+    padding: 10px;
+}
+
+.menu-footer,
+.menu-footer2,
+.menu-footer3,
+.icon {
+    opacity: 0;
+}
+
+
+/* footer */
+
+.owl-prev {
+    font-size: 50px;
+    left: 0;
+    position: absolute;
+    top: 30%;
+    font-size: 60px !important;
+    z-index: 1000;
+    outline: none;
+    transform: translateX(-30px);
+    transition: 1s;
+}
+
+.owl-next {
+    font-size: 50px;
+    right: 0;
+    position: absolute;
+    top: 30%;
+    font-size: 60px !important;
+    transform: translateX(30px);
+    transition: .5s;
+}
+
+.owl-carousel {
+    overflow: hidden;
+}
+
+.owl-carousel:hover .owl-prev,
+.owl-carousel:hover .owl-next {
+    display: block !important;
+    transform: translateX(0);
+}
+
+.owl-dots {
+    display: block;
+}
+
+
+/* ontop */
+
+.lentop {
+    display: none;
+    bottom: 20%;
+    right: 5%;
+    cursor: pointer;
+    position: fixed;
+    z-index: 1000;
+}
+
+.lentop .fa-angle-up {
+    font-size: 20px;
+    padding: 15px;
+    background: no-repeat;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    box-shadow: 1px 3px 5px 0px rgba(0, 0, 0, 0.3);
+    transition: 1s;
+}
+
+.lentop .fa-angle-up:hover {
+    color: #111;
+    background-color: rgb(209, 205, 205);
+    border: 2px solid #111;
+}
+
+
+/* ----------------------trang con---------------------------- */
+
+
+/* breadcrumb */
+
+.breadcrumb {
+    background-color: #fff !important;
+    z-index: 100000;
+    color: rgb(255, 255, 255) !important;
+}
+
+.breadcrumb-item a {
+    color: #111 !important;
+    font-weight: 400;
+    left: 50%;
+}
+
+.breadcrumb-item a:hover {
+    text-decoration: none !important;
+    border-bottom: 2px solid red;
+    transition: .5s;
+}
+
+
+/* breadcrumb */
+
+
+/* banner */
+
+.banner-g-shock {
+    background: url(../Imgs/banner1.jpg);
+}
+
+
+/*banner */
