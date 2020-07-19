@@ -12,19 +12,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
     <link rel="stylesheet" href="./CSS/animate.css">
 </head>
-<style>
-    .card-title {
-        font-size: 18px;
-    }
-</style>
 
 <body>
     <!-- barnav -->
     <div class="container-fluid ">
-        <div class="container">
+        <div class="container ">
             <nav class="navbar navbar-expand-lg  navbar-light fixed-top">
                 <div class="container">
-                    <a class="navbar-brand" href="#"><img src="./Imgs/logo.png" alt="" width="100"> </a>
+                    <a class="navbar-brand" href="index.php"><img src="./Imgs/logo.png" alt="" width="100"> </a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="border:1px solid #fff !important">
                     <span class="navbar-toggler-icon" ></span>
                     </button>
@@ -32,22 +27,22 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav mr-auto">
                             <li class="nav-item active">
-                                <a class="nav-link" href="index.html">Trang Chủ <span class="sr-only">(current)</span></a>
+                                <a class="nav-link" href="index.php">Trang Chủ <span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="introduce.html">Giới Thiệu</a>
+                                <a class="nav-link" href="introduce.php">Giới Thiệu</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="showroom.html">Cửa hàng</a>
+                                <a class="nav-link" href="showroom.php">Cửa hàng</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="g-shock.html">G-Shock</a>
+                                <a class="nav-link" href="g-shock.php">G-Shock</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="baby-g.html">Baby-G</a>
+                                <a class="nav-link" href="baby-g.php">Baby-G</a>
                             </li>
                             <li class="nav-item nav-item-sale-off">
-                                <a class="nav-link" href="sale.html">Sale Off</a>
+                                <a class="nav-link" href="sale.php">Sale Off</a>
                             </li>
                             <!-- <li class="nav-item dropdown ">
                                 <a class="nav-link" href="#">
@@ -83,8 +78,8 @@
     <div class="container-fuild banner-g-shock mt-5">
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="sale.html">Trang chủ</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Baby-G</li>
+                <li class="breadcrumb-item"><a href="sale.php">Trang chủ</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Sale</li>
             </ol>
         </nav>
     </div>
@@ -95,58 +90,75 @@
         <div class="row mb-2">
             <div class="col-sm-3 col-6">
                 <div class="card card-product">
-                    <img src="./Imgs/img-product-baby-g/ba-110-7a1.png" class="card-img-top" alt="...">
+                    <a href="./chitietsanphamsale/chitietsanpham2.php"> <img src="./Imgs/dw-5600e-1vq.png" class="card-img-top hinh1" alt="..."></a>
                     <div class="card-body">
-                        <h5 class="card-title">BABY-G GA-100-1A2</h5>
+                        <h5 class="card-title"> DW-5600E-1V</h5>
+                        <span class="price-sale">1,520,000Đ</span>
+                        <span class="price">1,904,000Đ</span>
+                        <div class="sale">
+                            -20%
+                        </div>
+                        <div class="heart">
+                            <i class="fas fa-heart"></i>
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        <div class="giohang">
+                            <i class="fas fa-cart-plus"></i>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3 col-6">
+                <div class="card card-product">
+                    <a href="./chitietsanphamsale/chitietsanpham1.php"> <img src="./Imgs/gst-b100-1a.png" class="card-img-top" alt="..."></a>
+                    <div class="card-body">
+                        <h5 class="card-title">GST-B100-1A</h5>
+                        <span class="price-sale">8,890,000Đ</span>
+                        <span class="price">11,116,000Đ</span>
+                        <div class="sale">
+                            -20%
+                        </div>
+                        <div class="heart">
+                            <i class="fas fa-heart"></i>
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        <div class="giohang">
+                            <i class="fas fa-cart-plus"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3 col-6">
+                <div class="card card-product">
+                    <a href="./chitietsanphamsale/chitietsanpham3.php"> <img src="./Imgs/ga-120-1a.png" class="card-img-top" alt="..."></a>
+                    <div class="card-body">
+                        <h5 class="card-title">GA-120-1A</h5>
+                        <span class="price-sale">9,999,000Đ</span>
+                        <span class="price">7,999,000Đ</span>
+                        <div class="sale">
+                            -20%
+                        </div>
+                        <div class="heart">
+                            <i class="fas fa-heart"></i>
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        <div class="giohang">
+                            <i class="fas fa-cart-plus"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3 col-6">
+                <div class="card card-product">
+                    <a href="./chitietsanphamsale/chitietsanpham4.php"> <img src="./Imgs/ga-110-1b.png" class="card-img-top" alt="..."></a>
+                    <div class="card-body">
+                        <h5 class="card-title">GA-110-1B</h5>
+                        <span class="price-sale">2,840,000Đ</span>
                         <span class="price">3,549,000Đ</span>
-                        <div class="heart">
-                            <i class="fas fa-heart"></i>
-                            <i class="fas fa-eye"></i>
+                        <div class="sale">
+                            -20%
                         </div>
-                        <div class="giohang">
-                            <i class="fas fa-cart-plus"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-3 col-6">
-                <div class="card card-product">
-                    <img src="./Imgs/img-product-baby-g/ba-110-7a3-247x300.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">BABY-G BA-110-7A3</h5>
-                        <span class="price">3,549,000Đ</span>
-                        <div class="heart">
-                            <i class="fas fa-heart"></i>
-                            <i class="fas fa-eye"></i>
-                        </div>
-                        <div class="giohang">
-                            <i class="fas fa-cart-plus"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-3 col-6">
-                <div class="card card-product">
-                    <img src="./Imgs/img-product-baby-g/ba-110pp-1a-247x300.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">BABY-G BA-110QQ-1A</h5>
-                        <span class="price">6,220,000Đ</span>
-                        <div class="heart">
-                            <i class="fas fa-heart"></i>
-                            <i class="fas fa-eye"></i>
-                        </div>
-                        <div class="giohang">
-                            <i class="fas fa-cart-plus"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-3 col-6">
-                <div class="card card-product">
-                    <img src="./Imgs/img-product-baby-g/bgd-560-7-247x300.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">BABY-G BGD-560-7</h5>
-                        <span class="price">3,890,000Đ</span>
                         <div class="heart">
                             <i class="fas fa-heart"></i>
                             <i class="fas fa-eye"></i>
@@ -161,10 +173,14 @@
         <div class="row">
             <div class="col-sm-3 col-6">
                 <div class="card card-product">
-                    <img src="./Imgs/img-product-baby-g/bgd-560thb-7-247x300.png" class="card-img-top" alt="...">
+                    <a href="./chitietsanphamsale/chitietsanpham5.php"> <img src="./Imgs/ga-110gb-1a.png" class="card-img-top" alt="..."></a>
                     <div class="card-body">
-                        <h5 class="card-title">BABY-G GBD-560THB-7</h5>
-                        <span class="price">2,560,000Đ</span>
+                        <h5 class="card-title">GA-110GB-1A</h5>
+                        <span class="price-sale">4,841,000Đ</span>
+                        <span class="price">3,870,000Đ</span>
+                        <div class="sale">
+                            -20%
+                        </div>
                         <div class="heart">
                             <i class="fas fa-heart"></i>
                             <i class="fas fa-eye"></i>
@@ -177,10 +193,14 @@
             </div>
             <div class="col-sm-3 col-6">
                 <div class="card card-product">
-                    <img src="./Imgs/img-product-baby-g/bgd-570thb-7-247x300.png" class="card-img-top" alt="...">
+                    <a href="./chitietsanphamsale/chitietsanpham6.php"> <img src="./Imgs/ga-100-1a4.png" class="card-img-top" alt="..."></a>
                     <div class="card-body">
-                        <h5 class="card-title">BABY-G GBD-570THB-7</h5>
-                        <span class="price">3,310,000Đ</span>
+                        <h5 class="card-title">GA-100-1A4</h5>
+                        <span class="price-sale">8,999,000Đ</span>
+                        <span class="price">6,599,000Đ</span>
+                        <div class="sale">
+                            -20%
+                        </div>
                         <div class="heart">
                             <i class="fas fa-heart"></i>
                             <i class="fas fa-eye"></i>
@@ -193,10 +213,14 @@
             </div>
             <div class="col-sm-3 col-6">
                 <div class="card card-product">
-                    <img src="./Imgs/img-product-baby-g/bgs-100gs-1a-247x300.png" class="card-img-top" alt="...">
+                    <a href="./chitietsanphamsale/chitietsanpham7.php"><img src="./Imgs/ga-100-1a1.png" class="card-img-top" alt="..."></a>
                     <div class="card-body">
-                        <h5 class="card-title">BABY-G BGS-100GS-1A</h5>
-                        <span class="price">4,080,000Đ</span>
+                        <h5 class="card-title">GA-100-1A1</h5>
+                        <span class="price-sale">3,032,000Đ</span>
+                        <span class="price">2,430,000Đ</span>
+                        <div class="sale">
+                            -20%
+                        </div>
                         <div class="heart">
                             <i class="fas fa-heart"></i>
                             <i class="fas fa-eye"></i>
@@ -209,10 +233,14 @@
             </div>
             <div class="col-sm-3 col-6">
                 <div class="card card-product">
-                    <img src="./Imgs/img-product-baby-g/msg-s200g-4a-247x300.png" class="card-img-top" alt="...">
+                    <a href="./chitietsanphamsale/chitietsanpham8.php"> <img src="./Imgs/ga-710gb-1a.png" class="card-img-top" alt="..."></a>
                     <div class="card-body">
-                        <h5 class="card-title">BABY-G MSG-S200G-4A</h5>
-                        <span class="price">19,080,000Đ</span>
+                        <h5 class="card-title">GA-710GB-1A</h5>
+                        <span class="price-sale">4,771,000Đ</span>
+                        <span class="price">3,820,000Đ</span>
+                        <div class="sale">
+                            -20%
+                        </div>
                         <div class="heart">
                             <i class="fas fa-heart"></i>
                             <i class="fas fa-eye"></i>
@@ -225,6 +253,7 @@
             </div>
         </div>
     </div>
+
 
     <footer>
         <div class="container-fluid">
@@ -242,10 +271,10 @@
                     <div class="col-sm-3 mt-5 menu-footer" style="opacity: 1;">
                         <h3 class="title-menu mt-4">Menu</h3>
                         <div class="menu-footer mt-5" style="opacity: 1;">
-                            <li> <a href="index.html"><i class="fas fa-caret-right"></i>Trang chủ</a></li>
-                            <li> <a href="introduce.html"><i class="fas fa-caret-right"></i>Giới thiệu</a></li>
+                            <li> <a href="index.php"><i class="fas fa-caret-right"></i>Trang chủ</a></li>
+                            <li> <a href="introduce.php"><i class="fas fa-caret-right"></i>Giới thiệu</a></li>
                             <li> <a href="#"><i class="fas fa-caret-right"></i>Tin tức</a></li>
-                            <li> <a href="showroom.html"><i class="fas fa-caret-right"></i>Liện hệ</a></li>
+                            <li> <a href="showroom.php"><i class="fas fa-caret-right"></i>Liện hệ</a></li>
                             <li> <a href="#"><i class="fas fa-caret-right"></i>Kiểm tra đơn hàng</a></li>
                             <li> <a href="#"><i class="fas fa-caret-right"></i>Đăng ký affilicate</a></li>
                         </div>
@@ -283,11 +312,6 @@
             </div>
         </div>
     </footer>
-    <div class='lentop'>
-        <div>
-            <i class="fas fa-angle-up"></i>
-        </div>
-    </div>
     <!-- main -->
     <!-- -------------------------- -->
     <script src="./JS/jquery-3.5.0.min.js"></script>

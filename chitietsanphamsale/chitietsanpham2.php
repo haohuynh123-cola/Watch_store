@@ -35,7 +35,7 @@
         <div class="container">
             <nav class="navbar navbar-expand-lg bg-dark navbar-light fixed-top">
                 <div class="container">
-                    <a class="navbar-brand" href="/index.html"><img src="./Imgs/logo.png" alt="" width="100"> </a>
+                    <a class="navbar-brand" href="/"><img src="./Imgs/logo.png" alt="" width="100"> </a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                     </button>
@@ -43,22 +43,22 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav mr-auto">
                             <li class="nav-item active">
-                                <a class="nav-link" href="/index.html">Trang Chủ <span class="sr-only">(current)</span></a>
+                                <a class="nav-link" href="/">Trang Chủ <span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/introduce.html">Giới Thiệu</a>
+                                <a class="nav-link" href="/introduce.php">Giới Thiệu</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/showroom.html">Cửa hàng</a>
+                                <a class="nav-link" href="/showroom.php">Cửa hàng</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/g-shock.html">G-Shock</a>
+                                <a class="nav-link" href="/g-shock.php">G-Shock</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/baby-g.html">Baby-G</a>
+                                <a class="nav-link" href="/baby-g.php">Baby-G</a>
                             </li>
                             <li class="nav-item nav-item-sale-off">
-                                <a class="nav-link" href="/sale.html">Sale</a>
+                                <a class="nav-link" href="/sale.php">Sale</a>
                             </li>
                             <!-- <li class="nav-item dropdown ">
                                 <a class="nav-link" href="#">
@@ -91,7 +91,8 @@
         <div class="contaier-fluid">
             <div class="row mt-3">
                 <div class="col-sm-4">
-                    <img id="myImg" src="../ings-product-hot/ga-110frg-7a.png" class="card-img-top" alt="...">
+                    <img id="myImg" src="../Imgs/dw-5600e-1vq.png" alt="Snow" style="width:100%;max-width:300px">
+
                     <!-- The Modal -->
                     <div id="myModal" class="modal">
                         <span class="close">&times;</span>
@@ -239,8 +240,10 @@
                             <li class="breadcrumb-item active" aria-current="page">Mặt số tiêu chuẩn</li>
                         </ol>
                     </nav>
-                    <h2>Casio G-SHOCK GA-110FRG-7A</h2>
-                    <span class="price">4,080,000Đ</span>
+                    <h2>Casio G-SHOCK GST-B100-1A</h2>
+                    <span class="price">1,520,00D</span>
+                    <span class="price-sale">1,904,000Đ</span>
+                    <p>(Bạn có thể tiết kiệm được : <b>384,000Đ</b>)</p>
                     <p>Bộ sản phẩm chính hãng gồm:</p>
                     <p><i class="fas fa-check"></i>1 đồng hồ + 1 hộp giấy + 1 hộp thiếc (tùy sản phẩm).</p>
                     <p><i class="fas fa-check"></i>Thẻ bảo hành chính hãng Casio</p>
@@ -316,29 +319,30 @@
                 <div class="col-sm-2">
                     <h3>Mô tả</h3>
                 </div>
-                <div class="col-sm-10">
-                    <h5>Video Clip Đồng hồ NAM Casio G-SHOCK GA-120-1A : ĐỒNG HỒ KIM-SỐ TIÊU CHUẨN</h5>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/AEcEzHq12_U?start=13" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="col-sm-8">
+                    <h6>Các tính năng</h6>
+                    <p>Khả năng chống nước ở độ sâu 200 mét và hiển thị đèn EL cực tím thuận lợi được gói gọn trong một thiết kế chắc chắn, mạnh mẽ và thời trang.</p>
                     <h6>Đặc điểm kỹ thuật</h6>
                     <p>・ Vật liệu vỏ / gờ: Nhựa</p>
                     <p>・ Dây đeo bằng nhựa</p>
                     <p>・ Mặt kính khoáng</p>
                     <p>・ Chống va đập</p>
                     <p>・ Khả năng chống nước ở độ sâu 200 mét</p>
-                    <p>・ Đèn LED Công tắc đèn tự động, thời lượng chiếu sáng có thể lựa chọn, phát sáng sau</p>
-                    <p>・ Giờ thế giới 29 múi giờ (48 thành phố + giờ phối hợp quốc tế), hiển thị mã thành phố, bật/tắt tiết kiệm ánh sáng ban ngày, chuyển đổi Giờ địa phương/Giờ thế giới</p>
-                    <p>・ Đồng hồ bấm giờ 1/1000 giây Khả năng đo: 99:59’59.999” Chế độ đo: Thời gian đã trôi qua, thời gian vòng chạy, ngắt giờ Khác: Tốc độ (0 đến 1998 đơn vị / giờ), Nhập khoảng cách (0,0 đến 99,9)</p>
-                    <p>・ Đồng hồ đếm ngược Đơn vị đo: 1 giây Khoảng đếm ngược: 24 giờ Khoảng cài đặt thời gian bắt đầu đếm ngược: 1 phút đến 24 giờ (khoảng tăng 1 phút và khoảng tăng 1 giờ) Khác: Tự động lặp lại</p>
-                    <p>・ 5 chế độ báo giờ hàng ngày (với 1 chế độ báo lặp)</p>
+                    <p>・ Đèn cực tím phát quang điện tử Phát sáng sau</p>
+                    <p>・ Báo bằng flash Nháy sáng cùng với tiếng còi kêu để báo giờ, cho tín hiệu thời gian hàng g</p>
+                    <p>・ Đồng hồ bấm giờ 1/100 giây Khả năng đo: 00’00″00~59’59″99 (cho 60 phút đầu tiên) 1:00’00~23:59’59 (sau 60 phút)</p>
+                    <p>・ Đơn vị đo: 1/100 giây (cho 60 phút đầu tiên) 1 giây (sau 60 phút) Chế độ đo: Thời gian đã trôi qua, ngắt giờ, thời gian về đích thứ nhất-thứ hai</p>
+                    <p>・ ĐĐồng hồ đếm ngược Đơn vị đo: 1 giây Khoảng đếm ngược: 24 giờ Khoảng cài đặt thời gian bắt đầu đếm ngược: 1 giây đến 24 giờ (khoảng tăng 1 giây, khoảng tăng 1 phút và khoảng tăng 1 giờ) Khác: Tự động lặp lại</p>
+                    <p>・ Báo giờ đa chức năng</p>
                     <p>・ Tín hiệu thời gian hàng giờ</p>
-                    <p>・ Lịch hoàn toàn tự động (đến năm 2099)</p>
+                    <p>・ Lịch hoàn toàn tự động (đến năm 2039)</p>
                     <p>・ Định dạng giờ 12/24</p>
                     <p>・ Giờ hiện hành thông thường: Giờ, phút, giây, chiều, tháng, ngày, thứ</p>
                     <p>・ Độ chính xác: ±15 giây một tháng</p>
-                    <p>・ Tuổi thọ pin xấp xỉ: 3 năm với pin CR1220</p>
+                    <p>・ Tuổi thọ pin xấp xỉ: 2 năm với pin CR2016</p>
                     <h6>Kích thước vỏ / Tổng trọng lượng</h6>
-                    <p>・ KKích thước vỏ : 55×51,2×16,9mm</p>
-                    <p>・ Tổng trọng lượng : 73g</p>
+                    <p>・ Kích thước vỏ : 48,9×42,8×13,4mm</p>
+                    <p>・ Tổng trọng lượng : 53g</p>
 
                 </div>
 
@@ -355,35 +359,31 @@
                 <div class="col-sm-10">
                     <table>
                         <tr>
-                            <th>NGÀY RA MẮT</th>
-                            <td>
-                                201108 </td>
+                            <th>CHỐNG NƯỚC</th>
+                            <td>Chống nước ở độ sâu 200 mét </td>
                         </tr>
                         <tr>
-                            <th>MODULE
+                            <th>GIỜ HIỆN HÀNH
 
                             </th>
-                            <td>5229
+                            <td>Kỹ thuật số
 
                             </td>
                         </tr>
                         <tr>
-                            <th>MÀU SẮC
-
+                            <th>LOẠI
 
                             </th>
                             <td>
-                                Đen
+                                Chức năng đèn, Đồng hồ bấm giờ, Đồng hồ đếm ngược
 
                             </td>
                         </tr>
                         <tr>
-                            <th>NHÓM
+                            <th>VỎ
                             </th>
                             <td>
-                                ĐỒNG HỒ KIM-SỐ TIÊU CHUẨN
-
-
+                                Chống va đập
 
                             </td>
                         </tr>
@@ -412,48 +412,29 @@
                             </td>
                         </tr>
                         <tr>
-                            <th>DÂY ĐEO
-
-
-                            </th>
-                            <td>Dây đeo bằng nhựa
-                            </td>
-                        </tr>
-                        <tr>
-                            <th>LOẠI
+                            <th>NGÀY RA MẮT
 
                             </th>
-                            <td>NAM
+                            <td>199606
 
 
 
                             </td>
                         </tr>
                         <tr>
-                            <th>CHỨC NĂNG KHÁC
+                            <th>MODULE
 
                             </th>
-                            <td>Chức năng đèn, Đồng hồ bấm giờ, Đồng hồ đếm ngược, Giờ thế giới
+                            <td>3229
+
+
 
                             </td>
                         </tr>
                         <tr>
-                            <th>VỎ</th>
-                            <td>Chống va đập
-
-                            </td>
-                        </tr>
-                        <tr>
-                            <th>CHỐNG NƯỚC
+                            <th>MÀU SẮC
                             </th>
-                            <td>Chống nước ở độ sâu 200 mét
-
-                            </td>
-                        </tr>
-                        <tr>
-                            <th>GIỜ HIỆN HÀNH
-                            </th>
-                            <td>Digital-Analog Combination
+                            <td>Đen
 
                             </td>
                         </tr>

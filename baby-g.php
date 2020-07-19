@@ -12,6 +12,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
     <link rel="stylesheet" href="./CSS/animate.css">
 </head>
+<style>
+    .card-title {
+        font-size: 18px;
+    }
+</style>
 
 <body>
     <!-- barnav -->
@@ -19,7 +24,7 @@
         <div class="container">
             <nav class="navbar navbar-expand-lg  navbar-light fixed-top">
                 <div class="container">
-                    <a class="navbar-brand" href="#"><img src="./Imgs/logo.png" alt="" width="100"> </a>
+                    <a class="navbar-brand" href="/"><img src="./Imgs/logo.png" alt="" width="100"> </a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="border:1px solid #fff !important">
                     <span class="navbar-toggler-icon" ></span>
                     </button>
@@ -27,22 +32,22 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav mr-auto">
                             <li class="nav-item active">
-                                <a class="nav-link" href="index.html">Trang Chủ <span class="sr-only">(current)</span></a>
+                                <a class="nav-link" href="index.php">Trang Chủ <span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="introduce.html">Giới Thiệu</a>
+                                <a class="nav-link" href="introduce.php">Giới Thiệu</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="showroom.html">Cửa hàng</a>
+                                <a class="nav-link" href="showroom.php">Cửa hàng</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="g-shock.html">G-Shock</a>
+                                <a class="nav-link" href="g-shock.php">G-Shock</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="baby-g.html">Baby-G</a>
+                                <a class="nav-link" href="baby-g.php">Baby-G</a>
                             </li>
                             <li class="nav-item nav-item-sale-off">
-                                <a class="nav-link" href="sale.html">Sale Off</a>
+                                <a class="nav-link" href="sale.php">Sale Off</a>
                             </li>
                             <!-- <li class="nav-item dropdown ">
                                 <a class="nav-link" href="#">
@@ -79,7 +84,7 @@
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="sale.html">Trang chủ</a></li>
-                <li class="breadcrumb-item active" aria-current="page">G-Shock</li>
+                <li class="breadcrumb-item active" aria-current="page">Baby-G</li>
             </ol>
         </nav>
     </div>
@@ -90,10 +95,10 @@
         <div class="row mb-2">
             <div class="col-sm-3 col-6">
                 <div class="card card-product">
-                    <img src="./ings-product-hot/ga-100-1a2.png" class="card-img-top" alt="...">
+                    <img src="./Imgs/img-product-baby-g/ba-110-7a1.png" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">GA-100-1A2</h5>
-                        <span class="price">3,032,000Đ</span>
+                        <h5 class="card-title">BABY-G GA-100-1A2</h5>
+                        <span class="price">3,549,000Đ</span>
                         <div class="heart">
                             <i class="fas fa-heart"></i>
                             <i class="fas fa-eye"></i>
@@ -106,10 +111,10 @@
             </div>
             <div class="col-sm-3 col-6">
                 <div class="card card-product">
-                    <img src="./ings-product-hot/ga-2100-1a1.png" class="card-img-top" alt="...">
+                    <img src="./Imgs/img-product-baby-g/ba-110-7a3-247x300.png" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">GA-2100-1A1</h5>
-                        <span class="price">3,290,000Đ</span>
+                        <h5 class="card-title">BABY-G BA-110-7A3</h5>
+                        <span class="price">3,549,000Đ</span>
                         <div class="heart">
                             <i class="fas fa-heart"></i>
                             <i class="fas fa-eye"></i>
@@ -122,9 +127,9 @@
             </div>
             <div class="col-sm-3 col-6">
                 <div class="card card-product">
-                    <img src="./ings-product-hot/ga-2100-1a1.png" class="card-img-top" alt="...">
+                    <img src="./Imgs/img-product-baby-g/ba-110pp-1a-247x300.png" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">GA-1000-1B</h5>
+                        <h5 class="card-title">BABY-G BA-110QQ-1A</h5>
                         <span class="price">6,220,000Đ</span>
                         <div class="heart">
                             <i class="fas fa-heart"></i>
@@ -138,9 +143,9 @@
             </div>
             <div class="col-sm-3 col-6">
                 <div class="card card-product">
-                    <img src="./ings-product-hot/gas-100g-1a.png" class="card-img-top" alt="...">
+                    <img src="./Imgs/img-product-baby-g/bgd-560-7-247x300.png" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">GAS-100G-1A</h5>
+                        <h5 class="card-title">BABY-G BGD-560-7</h5>
                         <span class="price">3,890,000Đ</span>
                         <div class="heart">
                             <i class="fas fa-heart"></i>
@@ -156,9 +161,9 @@
         <div class="row">
             <div class="col-sm-3 col-6">
                 <div class="card card-product">
-                    <img src="./ings-product-hot/ga-700-7a.png" class="card-img-top" alt="...">
+                    <img src="./Imgs/img-product-baby-g/bgd-560thb-7-247x300.png" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">GA-1100-2BDR</h5>
+                        <h5 class="card-title">BABY-G GBD-560THB-7</h5>
                         <span class="price">2,560,000Đ</span>
                         <div class="heart">
                             <i class="fas fa-heart"></i>
@@ -172,9 +177,9 @@
             </div>
             <div class="col-sm-3 col-6">
                 <div class="card card-product">
-                    <img src="./ings-product-hot/ga-100cb-1a.png" class="card-img-top" alt="...">
+                    <img src="./Imgs/img-product-baby-g/bgd-570thb-7-247x300.png" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">GA-100CB-1A</h5>
+                        <h5 class="card-title">BABY-G GBD-570THB-7</h5>
                         <span class="price">3,310,000Đ</span>
                         <div class="heart">
                             <i class="fas fa-heart"></i>
@@ -188,9 +193,9 @@
             </div>
             <div class="col-sm-3 col-6">
                 <div class="card card-product">
-                    <img src="./ings-product-hot/ga-110frg-7a.png" class="card-img-top" alt="...">
+                    <img src="./Imgs/img-product-baby-g/bgs-100gs-1a-247x300.png" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">GA-110FRG-7A</h5>
+                        <h5 class="card-title">BABY-G BGS-100GS-1A</h5>
                         <span class="price">4,080,000Đ</span>
                         <div class="heart">
                             <i class="fas fa-heart"></i>
@@ -204,9 +209,9 @@
             </div>
             <div class="col-sm-3 col-6">
                 <div class="card card-product">
-                    <img src="./ings-product-hot/gst-b100tfb-1a.png" class="card-img-top" alt="...">
+                    <img src="./Imgs/img-product-baby-g/msg-s200g-4a-247x300.png" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">GST-B100TFB-1A</h5>
+                        <h5 class="card-title">BABY-G MSG-S200G-4A</h5>
                         <span class="price">19,080,000Đ</span>
                         <div class="heart">
                             <i class="fas fa-heart"></i>

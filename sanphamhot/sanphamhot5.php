@@ -35,7 +35,7 @@
         <div class="container">
             <nav class="navbar navbar-expand-lg bg-dark navbar-light fixed-top">
                 <div class="container">
-                    <a class="navbar-brand" href="/index.html"><img src="./Imgs/logo.png" alt="" width="100"> </a>
+                    <a class="navbar-brand" href="/index.php"><img src="./Imgs/logo.png" alt="" width="100"> </a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                     </button>
@@ -43,22 +43,22 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav mr-auto">
                             <li class="nav-item active">
-                                <a class="nav-link" href="/index.html">Trang Chủ <span class="sr-only">(current)</span></a>
+                                <a class="nav-link" href="/index.php">Trang Chủ <span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/introduce.html">Giới Thiệu</a>
+                                <a class="nav-link" href="/introduce.php">Giới Thiệu</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/showroom.html">Cửa hàng</a>
+                                <a class="nav-link" href="/showroom.php">Cửa hàng</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/g-shock.html">G-Shock</a>
+                                <a class="nav-link" href="/g-shock.php">G-Shock</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/baby-g.html">Baby-G</a>
+                                <a class="nav-link" href="/baby-g.php">Baby-G</a>
                             </li>
                             <li class="nav-item nav-item-sale-off">
-                                <a class="nav-link" href="/sale.html">Sale</a>
+                                <a class="nav-link" href="/sale.php">Sale</a>
                             </li>
                             <!-- <li class="nav-item dropdown ">
                                 <a class="nav-link" href="#">
@@ -91,7 +91,7 @@
         <div class="contaier-fluid">
             <div class="row mt-3">
                 <div class="col-sm-4">
-                    <img id="myImg" src="../Imgs/ga-100-1a1.png" class="card-img-top" alt="...">
+                    <img id="myImg" src="../ings-product-hot/ga-700-7a.png" class="card-img-top" alt="...">
                     <!-- The Modal -->
                     <div id="myModal" class="modal">
                         <span class="close">&times;</span>
@@ -234,15 +234,13 @@
                 <div class="col-sm-5">
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="/sale.html">Sản phẩm</a></li>
+                            <li class="breadcrumb-item"><a href="sale.html">Sản phẩm</a></li>
                             <li class="breadcrumb-item active" aria-current="page">G-Shock</li>
                             <li class="breadcrumb-item active" aria-current="page">Mặt số tiêu chuẩn</li>
                         </ol>
                     </nav>
-                    <h2>Casio G-SHOCK GA-100-1A1</h2>
-                    <span class="price">2,240,000Đ</span>
-                    <span class="price-sale">3,032,000Đ</span>
-                    <p>(Bạn có thể tiết kiệm được : <b>792,000Đ</b>)</p>
+                    <h2>Casio G-SHOCK GA-1100-2BDR</h2>
+                    <span class="price">2,560,000Đ</span>
                     <p>Bộ sản phẩm chính hãng gồm:</p>
                     <p><i class="fas fa-check"></i>1 đồng hồ + 1 hộp giấy + 1 hộp thiếc (tùy sản phẩm).</p>
                     <p><i class="fas fa-check"></i>Thẻ bảo hành chính hãng Casio</p>

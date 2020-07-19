@@ -35,7 +35,7 @@
         <div class="container">
             <nav class="navbar navbar-expand-lg bg-dark navbar-light fixed-top">
                 <div class="container">
-                    <a class="navbar-brand" href="/index.html"><img src="./Imgs/logo.png" alt="" width="100"> </a>
+                    <a class="navbar-brand" href="/index.php"><img src="./Imgs/logo.png" alt="" width="100"> </a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                     </button>
@@ -43,22 +43,22 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav mr-auto">
                             <li class="nav-item active">
-                                <a class="nav-link" href="/index.html">Trang Chủ <span class="sr-only">(current)</span></a>
+                                <a class="nav-link" href="/index.php">Trang Chủ <span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/introduce.html">Giới Thiệu</a>
+                                <a class="nav-link" href="/introduce.php">Giới Thiệu</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/showroom.html">Cửa hàng</a>
+                                <a class="nav-link" href="/showroom.php">Cửa hàng</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/g-shock.html">G-Shock</a>
+                                <a class="nav-link" href="/g-shock.php">G-Shock</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/baby-g.html">Baby-G</a>
+                                <a class="nav-link" href="/baby-g.php">Baby-G</a>
                             </li>
                             <li class="nav-item nav-item-sale-off">
-                                <a class="nav-link" href="/sale.html">Sale</a>
+                                <a class="nav-link" href="/sale.php">Sale</a>
                             </li>
                             <!-- <li class="nav-item dropdown ">
                                 <a class="nav-link" href="#">
@@ -91,153 +91,158 @@
         <div class="contaier-fluid">
             <div class="row mt-3">
                 <div class="col-sm-4">
+                    <img id="myImg" src="../Imgs/ga-100-1a4.png" class="card-img-top" alt="...">
+                    <!-- The Modal -->
+                    <div id="myModal" class="modal">
+                        <span class="close">&times;</span>
+                        <img class="modal-content" id="img01">
+                        <div id="caption"></div>
+                    </div>
                     <style>
-                        /* Position the image container (needed to position the left and right arrows) */
-                        
-                        .container {
-                            position: relative;
+                        body {
+                            font-family: Arial, Helvetica, sans-serif;
                         }
-                        /* Hide the images by default */
                         
-                        .mySlides {
+                        #myImg {
+                            border-radius: 5px;
+                            cursor: pointer;
+                            transition: 0.3s;
+                        }
+                        
+                        #myImg:hover {
+                            opacity: 0.7;
+                        }
+                        /* The Modal (background) */
+                        
+                        .modal {
                             display: none;
+                            /* Hidden by default */
+                            position: fixed;
+                            /* Stay in place */
+                            z-index: 1;
+                            /* Sit on top */
+                            padding-top: 100px;
+                            /* Location of the box */
+                            left: 0;
+                            top: 0;
+                            width: 100%;
+                            /* Full width */
+                            height: 100%;
+                            /* Full height */
+                            overflow: auto;
+                            /* Enable scroll if needed */
+                            background-color: rgb(0, 0, 0);
+                            /* Fallback color */
+                            background-color: rgba(0, 0, 0, 0.9);
+                            /* Black w/ opacity */
                         }
-                        /* Add a pointer when hovering over the thumbnail images */
+                        /* Modal Content (image) */
                         
-                        .cursor {
-                            cursor: pointer;
+                        .modal-content {
+                            margin: auto;
+                            display: block;
+                            width: 80%;
+                            max-width: 700px;
                         }
-                        /* Next & previous buttons */
+                        /* Caption of Modal Image */
                         
-                        .prev,
-                        .next {
-                            cursor: pointer;
-                            position: absolute;
-                            top: 40%;
-                            width: auto;
-                            padding: 16px;
-                            margin-top: -50px;
-                            color: white;
-                            font-weight: bold;
-                            font-size: 20px;
-                            border-radius: 0 3px 3px 0;
-                            user-select: none;
-                            -webkit-user-select: none;
-                        }
-                        /* Position the "next button" to the right */
-                        
-                        .next {
-                            right: 0;
-                            border-radius: 3px 0 0 3px;
-                        }
-                        /* On hover, add a black background color with a little bit see-through */
-                        /* Number text (1/3 etc) */
-                        /* Container for image text */
-                        
-                        .caption-container {
+                        #caption {
+                            margin: auto;
+                            display: block;
+                            width: 80%;
+                            max-width: 700px;
                             text-align: center;
-                            background-color: #222;
-                            padding: 2px 16px;
-                            color: white;
+                            color: #ccc;
+                            padding: 10px 0;
+                            height: 150px;
+                        }
+                        /* Add Animation */
+                        
+                        .modal-content,
+                        #caption {
+                            -webkit-animation-name: zoom;
+                            -webkit-animation-duration: 0.6s;
+                            animation-name: zoom;
+                            animation-duration: 0.6s;
                         }
                         
-                        .column {
-                            float: left;
-                            width: 16.66%;
+                        @-webkit-keyframes zoom {
+                            from {
+                                -webkit-transform: scale(0)
+                            }
+                            to {
+                                -webkit-transform: scale(1)
+                            }
                         }
-                        /* Add a transparency effect for thumnbail images */
                         
-                        .demo {
-                            opacity: 0.6;
+                        @keyframes zoom {
+                            from {
+                                transform: scale(0)
+                            }
+                            to {
+                                transform: scale(1)
+                            }
+                        }
+                        /* The Close Button */
+                        
+                        .close {
+                            position: absolute;
+                            top: 10%;
+                            right: 20%;
+                            color: #f1f1f1;
+                            font-size: 40px;
+                            font-weight: bold;
+                            transition: 0.3s;
                         }
                         
-                        .active,
-                        .demo:hover {
-                            opacity: 1;
+                        .close:hover,
+                        .close:focus {
+                            color: #bbb;
+                            text-decoration: none;
+                            cursor: pointer;
+                        }
+                        /* 100% Image Width on Smaller Screens */
+                        
+                        @media only screen and (max-width: 700px) {
+                            .modal-content {
+                                width: 100%;
+                            }
                         }
                     </style>
-
-                    <div class="container">
-                        <div class="mySlides">
-                            <div class="numbertext">1 / 3</div>
-                            <img src="../Imgs/sp1/1.png" style="width:100%" height="500px">
-                        </div>
-
-                        <div class="mySlides">
-                            <div class="numbertext">2 / 3</div>
-                            <img src="../Imgs/sp1/2.jpg" style="width:100%" height="500px">
-                        </div>
-                        <div class="mySlides">
-                            <div class="numbertext">3 / 3</div>
-                            <img src="../Imgs/sp1/6.jpg" style="width:100%" height="500px">
-                        </div>
-
-                        <a class="prev" onclick="plusSlides(-1)">❮</a>
-                        <a class="next" onclick="plusSlides(1)">❯</a>
-
-                        <div class="caption-container">
-                            <p id="caption"></p>
-                        </div>
-
-                        <div class="row">
-                            <div class="column">
-                                <img class="demo cursor" src="../Imgs/sp1/1.png" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
-                            </div>
-                            <div class="column">
-                                <img class="demo cursor" src="../Imgs/sp1/2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
-                            </div>
-                            <div class="column">
-                                <img class="demo cursor" src="../Imgs/sp1/6.jpg" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
-                            </div>
-                        </div>
-                    </div>
-
                     <script>
-                        var slideIndex = 1;
-                        showSlides(slideIndex);
+                        // Get the modal
+                        var modal = document.getElementById("myModal");
 
-                        function plusSlides(n) {
-                            showSlides(slideIndex += n);
+                        // Get the image and insert it inside the modal - use its "alt" text as a caption
+                        var img = document.getElementById("myImg");
+                        var modalImg = document.getElementById("img01");
+                        img.onclick = function() {
+                            modal.style.display = "block";
+                            modalImg.src = this.src;
+                            captionText.innerHTML = this.alt;
                         }
 
-                        function currentSlide(n) {
-                            showSlides(slideIndex = n);
-                        }
+                        // Get the <span> element that closes the modal
+                        var span = document.getElementsByClassName("close")[0];
 
-                        function showSlides(n) {
-                            var i;
-                            var slides = document.getElementsByClassName("mySlides");
-                            var dots = document.getElementsByClassName("demo");
-                            if (n > slides.length) {
-                                slideIndex = 1
-                            }
-                            if (n < 1) {
-                                slideIndex = slides.length
-                            }
-                            for (i = 0; i < slides.length; i++) {
-                                slides[i].style.display = "none";
-                            }
-                            for (i = 0; i < dots.length; i++) {
-                                dots[i].className = dots[i].className.replace(" active", "");
-                            }
-                            slides[slideIndex - 1].style.display = "block";
-                            dots[slideIndex - 1].className += " active";
-                            captionText.innerHTML = dots[slideIndex - 1].alt;
+                        // When the user clicks on <span> (x), close the modal
+                        span.onclick = function() {
+                            modal.style.display = "none";
                         }
                     </script>
                 </div>
                 <div class="col-sm-5">
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="sale.html">Sản phẩm</a></li>
+                            <li class="breadcrumb-item"><a href="/sale.html">Sản phẩm</a></li>
                             <li class="breadcrumb-item active" aria-current="page">G-Shock</li>
-                            <li class="breadcrumb-item active" aria-current="page">G-Steel</li>
+                            <li class="breadcrumb-item active" aria-current="page">Mặt số tiêu chuẩn</li>
                         </ol>
                     </nav>
-                    <h2>Casio G-SHOCK GST-B100-1A</h2>
-                    <span class="price">8,890,000Đ</span>
-                    <span class="price-sale">11,116,000Đ</span>
-                    <p>(Bạn có thể tiết kiệm được : <b>2,226,000Đ</b>)</p>
+                    <h2>Casio G-SHOCK GA-100-1A4</h2>
+                    <span class="price">6,590,000Đ</span>
+                    <span class="price-sale">8,999,000Đ</span>
+                    <p>(Bạn có thể tiết kiệm được : <b>2,449,000Đ</b>)</p>
                     <p>Bộ sản phẩm chính hãng gồm:</p>
                     <p><i class="fas fa-check"></i>1 đồng hồ + 1 hộp giấy + 1 hộp thiếc (tùy sản phẩm).</p>
                     <p><i class="fas fa-check"></i>Thẻ bảo hành chính hãng Casio</p>
@@ -300,12 +305,12 @@
                                 </div>
                             </div>
                             <br>
+
                         </form>
                     </div>
                 </div>
             </div>
-        </div>
-        <hr>
+            <hr>
         </div>
 
         <div class="container-fluid">
@@ -313,40 +318,29 @@
                 <div class="col-sm-2">
                     <h3>Mô tả</h3>
                 </div>
-                <div class="col-sm-8">
-                    <h6>các tính năng</h6>
-                    <p>Tuổi thọ pin 10 năm</p>
-                    <p>・ Đồng hồ bấm giờ 1/100 giây</p>
-                    <p>・ Bản đồ thế giới cho Giờ thế giới
-                    </p>
-                    <p>・ 5 chế độ báo</p>
-                    <p>・ Đèn LED</p>
-                    <p>・ Khả năng chống nước ở độ sâu 100 mét</p>
-                    <p>・ Dây đeo bằng vải</p>
-                    <h6>Đặc điểm ký thuật</h6>
-                    <li>Vật liệu vỏ / vành bezel: Nhựa</li>
-                    <li>Dây đeo bằng vải</li>
-                    <li>Mặt kính nhựa</li>
-                    <li>Khả năng chống nước ở độ sâu 100 mét</li>
-                    <li>Đèn LED Thời lượng chiếu sáng có thể lựa chọn, phát sáng sau</li>
-                    <li>Nhiều múi giờ (4 thành phố khác nhau)</li>
-                    <li>Giờ thế giới 31 múi giờ (48 thành phố + giờ phối hợp quốc tế), bật/tắt tiết kiệm ánh sáng ban ngày, chuyển đổi thành phố Giờ chuẩn/Giờ thế giới</li>
-                    <li>Đồng hồ bấm giờ 1/100 giây Khả năng đo: 23:59’59,99” Chế độ đo: Thời gian đã trôi qua, ngắt giờ, thời gian về đích thứ nhất-thứ hai</li>
-                    <li>Đồng hồ đếm ngược Đơn vị đo: 1/10 giây Khoảng nhập: 1 giây đến 24 giờ (khoảng tăng 1 giây, khoảng tăng 1 phút và khoảng tăng 1 giờ)</li>
-                    <li>5 chế độ báo hàng ngày hoặc một lần</li>
-                    <li>Tín hiệu thời gian hàng giờ</li>
-                    <li>Lịch hoàn toàn tự động (đến năm 2099)</li>
-                    <li>Định dạng giờ 12/24</li>
-                    <li>Bật/tắt âm nhấn nút</li>
-                    <li>Giờ hiện hành thông thường: Giờ, phút, giây, chiều, tháng, ngày, thứ
-                    </li>
-                    <li>Độ chính xác: ±30 giây một tháng
-                    </li>
-                    <li>Tuổi thọ pin xấp xỉ: 10 năm với pin CR2025
-                    </li>
+                <div class="col-sm-10">
+                    <h5>Video Clip Đồng hồ NAM Casio G-SHOCK GA-120-1A : ĐỒNG HỒ KIM-SỐ TIÊU CHUẨN</h5>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/AEcEzHq12_U?start=13" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <h6>Đặc điểm kỹ thuật</h6>
+                    <p>・ Vật liệu vỏ / gờ: Nhựa</p>
+                    <p>・ Dây đeo bằng nhựa</p>
+                    <p>・ Mặt kính khoáng</p>
+                    <p>・ Chống va đập</p>
+                    <p>・ Khả năng chống nước ở độ sâu 200 mét</p>
+                    <p>・ Đèn LED Công tắc đèn tự động, thời lượng chiếu sáng có thể lựa chọn, phát sáng sau</p>
+                    <p>・ Giờ thế giới 29 múi giờ (48 thành phố + giờ phối hợp quốc tế), hiển thị mã thành phố, bật/tắt tiết kiệm ánh sáng ban ngày, chuyển đổi Giờ địa phương/Giờ thế giới</p>
+                    <p>・ Đồng hồ bấm giờ 1/1000 giây Khả năng đo: 99:59’59.999” Chế độ đo: Thời gian đã trôi qua, thời gian vòng chạy, ngắt giờ Khác: Tốc độ (0 đến 1998 đơn vị / giờ), Nhập khoảng cách (0,0 đến 99,9)</p>
+                    <p>・ Đồng hồ đếm ngược Đơn vị đo: 1 giây Khoảng đếm ngược: 24 giờ Khoảng cài đặt thời gian bắt đầu đếm ngược: 1 phút đến 24 giờ (khoảng tăng 1 phút và khoảng tăng 1 giờ) Khác: Tự động lặp lại</p>
+                    <p>・ 5 chế độ báo giờ hàng ngày (với 1 chế độ báo lặp)</p>
+                    <p>・ Tín hiệu thời gian hàng giờ</p>
+                    <p>・ Lịch hoàn toàn tự động (đến năm 2099)</p>
+                    <p>・ Định dạng giờ 12/24</p>
+                    <p>・ Giờ hiện hành thông thường: Giờ, phút, giây, chiều, tháng, ngày, thứ</p>
+                    <p>・ Độ chính xác: ±15 giây một tháng</p>
+                    <p>・ Tuổi thọ pin xấp xỉ: 3 năm với pin CR1220</p>
                     <h6>Kích thước vỏ / Tổng trọng lượng</h6>
-                    <li>Kích thước vỏ : 45×42,1×12,5mm</li>
-                    <li>Tổng trọng lượng : 39g</li>
+                    <p>・ KKích thước vỏ : 55×51,2×16,9mm</p>
+                    <p>・ Tổng trọng lượng : 73g</p>
 
                 </div>
 
@@ -363,68 +357,105 @@
                 <div class="col-sm-10">
                     <table>
                         <tr>
-                            <th>GIỜ HIỆN HÀNH
-                            </th>
-                            <td>Kỹ thuật số</td>
-                        </tr>
-                        <tr>
-                            <th>LOẠI
-                            </th>
-                            <td>Nam</td>
-                        </tr>
-                        <tr>
-                            <th>CHỨC NĂNG KHÁC
-
-                            </th>
+                            <th>NGÀY RA MẮT</th>
                             <td>
-                                Bật/tắt âm nhấn nút, Chức năng đèn, Đồng hồ bấm giờ, Đồng hồ đếm ngược, Giờ thế giới</td>
-                        </tr>
-                        <tr>
-                            <th>CHỐNG NƯỚC
-                            </th>
-                            <td>Khả năng chống nước ở độ sâu 100 mét
-
-                            </td>
-                        </tr>
-                        <tr>
-                            <th>DÂY ĐEO
-                            </th>
-                            <td>Dây đeo bằng vải
-
-                            </td>
-                        </tr>
-                        <tr>
-                            <th>NHÃN HIỆU
-                            </th>
-                            <td>STANDARD
-
-                            </td>
-                        </tr>
-                        <tr>
-                            <th>NGÀY RA MẮT
-                            </th>
-                            <td>201302
-
-                            </td>
+                                201108 </td>
                         </tr>
                         <tr>
                             <th>MODULE
+
                             </th>
-                            <td>3299
+                            <td>5229
 
                             </td>
                         </tr>
                         <tr>
                             <th>MÀU SẮC
+
+
                             </th>
-                            <td>Đen, Xanh lục
+                            <td>
+                                Đen
 
                             </td>
                         </tr>
                         <tr>
                             <th>NHÓM
                             </th>
-                            <td>TUỔI THỌ PIN 10 NĂM
+                            <td>
+                                ĐỒNG HỒ KIM-SỐ TIÊU CHUẨN
+
+
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>DÂY ĐEO
+                            </th>
+                            <td>Dây đeo bằng nhựa
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>NHÓM
+                            </th>
+                            <td>ĐỒNG HỒ SỐ TIÊU CHUẨN
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>NHÃN HIỆU
+
+                            </th>
+                            <td>G-SHOCK
+
+
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>DÂY ĐEO
+
+
+                            </th>
+                            <td>Dây đeo bằng nhựa
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>LOẠI
+
+                            </th>
+                            <td>NAM
+
+
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>CHỨC NĂNG KHÁC
+
+                            </th>
+                            <td>Chức năng đèn, Đồng hồ bấm giờ, Đồng hồ đếm ngược, Giờ thế giới
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>VỎ</th>
+                            <td>Chống va đập
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>CHỐNG NƯỚC
+                            </th>
+                            <td>Chống nước ở độ sâu 200 mét
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>GIỜ HIỆN HÀNH
+                            </th>
+                            <td>Digital-Analog Combination
 
                             </td>
                         </tr>
